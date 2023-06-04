@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.otf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ComplainHeaderTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ComplainHeaderTableViewCell" rowHeight="62" id="KGk-i7-Jjw" customClass="ComplainHeaderTableViewCell" customModule="IOCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fw-xR-1qc">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-dL-0MM">
+                                <rect key="frame" x="10" y="10" width="326" height="42"/>
+                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK6-ex-Fa4">
+                                <rect key="frame" x="2" y="59" width="342" height="1"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="etC-4a-vWW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LK6-ex-Fa4" secondAttribute="trailing" constant="2" id="OE8-Wm-kpX"/>
+                            <constraint firstAttribute="trailing" secondItem="LKx-dL-0MM" secondAttribute="trailing" constant="10" id="bJy-3Y-UrL"/>
+                            <constraint firstItem="LKx-dL-0MM" firstAttribute="leading" secondItem="2Fw-xR-1qc" secondAttribute="leading" constant="10" id="cW0-za-n8y"/>
+                            <constraint firstAttribute="bottom" secondItem="LK6-ex-Fa4" secondAttribute="bottom" constant="2" id="eGe-uy-Bs3"/>
+                            <constraint firstAttribute="bottom" secondItem="LKx-dL-0MM" secondAttribute="bottom" constant="10" id="l89-h4-LVV"/>
+                            <constraint firstItem="LK6-ex-Fa4" firstAttribute="leading" secondItem="2Fw-xR-1qc" secondAttribute="leading" constant="2" id="ugd-B9-2Of"/>
+                            <constraint firstItem="LKx-dL-0MM" firstAttribute="top" secondItem="2Fw-xR-1qc" secondAttribute="top" constant="10" id="vEE-md-0cG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Fw-xR-1qc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2u8-os-UeD"/>
+                    <constraint firstItem="2Fw-xR-1qc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6dG-LD-EK3"/>
+                    <constraint firstAttribute="bottom" secondItem="2Fw-xR-1qc" secondAttribute="bottom" id="7WZ-8x-iWt"/>
+                    <constraint firstAttribute="trailing" secondItem="2Fw-xR-1qc" secondAttribute="trailing" id="xgf-2b-l1e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headingLbl" destination="LKx-dL-0MM" id="04Z-n7-5Ag"/>
+                <outlet property="outerView" destination="2Fw-xR-1qc" id="mlR-ll-QTt"/>
+            </connections>
+            <point key="canvasLocation" x="65.648854961832058" y="26.056338028169016"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

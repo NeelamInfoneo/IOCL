@@ -1,0 +1,6 @@
+framework module Pods_IOCL_IOCLUITests {
+  umbrella header "Pods-IOCL-IOCLUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
